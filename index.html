@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kevin Hölscher Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Kevin Hölscher</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/intro.jpg" alt="a picture of Kevin smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>I work with HTML / CSS / JS and frameworks like React and Vue.js to realize your projects and Figma to give you an idea of ​​what your project could look like</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>So that you can offer your shop, I offer a range of e-commerce systems</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>WordPress</h3>
+                    <p>I will create your wordpress page for you so that you can conveniently share your content via a solid cms system</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based in Berlin</p>
+           
+           <div class="about-me__body">
+               <p>As mentioned above, my name is Kevin Hölscher. I started coding last year and have found one of my greatest passions.</p>
+               <p>You can see my previous side projects below</p>
+           </div>
+           
+           <img src="img/me2.jpg" alt="picture from me" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://fujamate.github.io/My-first-RPG-Game/" class="portfolio__item">
+                    <img src="img/My RPG GAME.PNG" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://fujamate.github.io/Background-Generator/" class="portfolio__item">
+                    <img src="img/background genereator.PNG" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/3.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/7.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/8.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/9.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/10.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/11.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:fujamate@gmx.de" class="footer__link">hello@devkev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/HolscherKevin">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Fujamate">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
