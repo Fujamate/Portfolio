@@ -82,9 +82,6 @@ strong {
   background-color: var(--clr-accent);
   padding: 0.25rem;
   text-align: center;
-  position: relative;
-  bottom: 7em;
-  left: 6em;
   font-weight: var(--fs-h3);
 }
 
