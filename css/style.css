@@ -225,6 +225,10 @@ h3 {
   opacity: 0.25;
 }
 
+.services {
+  margin-bottom: 1em;
+}
+
 .service {
   max-width: 500px;
   margin: 0 auto;
