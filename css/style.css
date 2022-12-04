@@ -12,8 +12,8 @@
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-dark: #180a29;
+  --clr-accent: #1e555c;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -68,7 +68,7 @@ strong {
 
 /* Skills */
 
-.list-skills {
+.list__skills {
   display: flex;
   justify-content: space-evenly;
   width: 25%;
@@ -80,9 +80,19 @@ strong {
   list-style-type: none;
   border-radius: 0.25rem;
   background-color: var(--clr-accent);
-  padding: 0.25rem;
+  color: var(--clr-light);
+  padding: 0.25rem 1rem;
   text-align: center;
   font-weight: var(--fs-h3);
+}
+
+.list__skills--card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+  padding: 1rem 0;
+  margin: auto;
+  gap: 1rem;
 }
 
 /* Buttons */
@@ -138,19 +148,19 @@ h3 {
 
 .section__subtitle {
   margin: 0;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h);
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  background: #869d96;
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: var(--clr-light);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
@@ -202,20 +212,19 @@ h3 {
 /*  My services section  */
 
 .my-services {
-  background-color: var(--clr-dark);
+  background-color: #303030;
   background-image: url(../img/services-bg.png);
   background-size: cover;
   /* background-blend-mode: multiply; */
-  color: var(--clr-light);
   text-align: center;
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: #869d96;
   position: relative;
 }
 
-.section__title--services::after {
+/* .section__title--services::after {
   content: "";
   display: block;
   width: 2em;
@@ -223,6 +232,11 @@ h3 {
   margin: 0.5em auto 1em;
   background: var(--clr-light);
   opacity: 0.25;
+} */
+
+.p-text {
+  color: var(--clr-light);
+  font-size: var(--fs-bold);
 }
 
 .services {
@@ -295,8 +309,8 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: #869d96;
+  color: var(--clr-dark);
   text-align: center;
 }
 
@@ -448,4 +462,103 @@ h3 {
 .nav__link {
   color: white;
   text-decoration: none;
+}
+
+.whatever {
+  color: #fff !important;
+  font-size: 22px;
+}
+
+/* ----------------- CARDS----------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: var(--clr-light);
+}
+
+.card__image {
+  width: 100%;
+  height: 40vh;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 0.3em;
+  color: #6a515e;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: var(--clr-accent);
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.second__card {
+  width: 90%;
+  margin: 2.5% 0 0 5%;
+  background-color: rgba(112, 104, 104, 0.411);
+  border-radius: 0.25rem;
 }

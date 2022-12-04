@@ -8,12 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+    <script
+      src="https://kit.fontawesome.com/8a72df8531.js"
       crossorigin="anonymous"
-    />
+    ></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
@@ -53,7 +51,7 @@
     <section class="my-services" id="services">
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
-        <p>
+        <p class="p-text">
           Through my studies including various courses and bootcamps, I have
           gained skills both in front-end and backend development. I'm
           specialized working with HTML/CSS/JS and use frameworks like React and
@@ -62,7 +60,7 @@
         </p>
       </div>
       <div class="skill__order">
-        <ul class="list-skills">
+        <ul class="list__skills">
           <li class="skills">#HTML</li>
           <li class="skills">#CSS</li>
           <li class="skills">#JavaScript</li>
@@ -101,64 +99,68 @@
     <!-- My Work -->
     <section class="my-work" id="work">
       <h2 class="section__title section__title--work">My work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        Check out my selection of projects
+      <p class="whatever">
+        <strong>Check out my selection of projects</strong>
       </p>
-
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <a
-          href="https://fujamate.github.io/My-first-RPG-Game/"
-          class="portfolio__item"
-        >
-          <img
-            src="img/My RPG GAME.PNG"
-            alt="My-first-RPG-Game"
-            class="portfolio__img"
-          />
-        </a>
-        <!-- <ul class="portfolio-skills">
-          <li class="portfolio-skills-button">#HTML</li>
-          <li class="portfolio-skills-button">#CSS</li>
-          <li class="portfolio-skills-button">#JavaScript</li>
-        </ul> -->
-
-        <!-- Portfolio item 02 -->
-        <a
-          href="https://fujamate.github.io/Food-Order-App/"
-          class="portfolio__item"
-        >
-          <img
-            src="img/react-food-order-app.PNG"
-            alt="A Food-Order-App"
-            class="portfolio__img"
-          />
-        </a>
-
-        <!-- Portfolio item 03 -->
-        <a
-          href="https://fujamate.github.io/Sliding-Puzzle/"
-          class="portfolio__item"
-        >
-          <img
-            src="img\slidding puzzle.PNG"
-            alt="A Sliding-Puzzle Game"
-            class="portfolio__img"
-          />
-        </a>
-
-        <!-- Portfolio item 04 -->
-        <a
-          href="https://fujamate.github.io/Background-Generator/"
-          class="portfolio__item"
-        >
-          <img
-            src="img/background genereator.PNG"
-            alt="A Background-Generator"
-            class="portfolio__img"
-          />
-        </a>
-      </div>
+      <ul class="cards">
+        <li>
+          <a href="https://fujamate.github.io/My-first-RPG-Game/" class="card">
+            <img src="img/rpg-game.PNG" class="card__image" alt="" />
+            <div class="second__card">
+              <ul class="list__skills--card">
+                <li class="skills">#HTML</li>
+                <li class="skills">#JavaScript</li>
+              </ul>
+              <p class="card__description">
+                Modular development of a mini-game including animation handling
+                and processing of sound elements.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://fujamate.github.io/Food-Order-App/" class="card">
+            <img src="img/food-order-app.PNG" class="card__image" alt="" />
+            <ul class="list__skills--card">
+              <li class="skills">#HTML</li>
+              <li class="skills">#CSS</li>
+              <li class="skills">#React</li>
+            </ul>
+            <p class="card__description">
+              Development of an app for ordering food. In this project I was
+              able to learn a lot about the concept of React, API's, databases
+              and hooks in React.
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://fujamate.github.io/Sliding-Puzzle/" class="card">
+            <img src="img\puzzle.PNG" class="card__image" alt="" />
+            <ul class="list__skills--card">
+              <li class="skills">#HTML</li>
+              <li class="skills">#CSS</li>
+              <li class="skills">#React</li>
+            </ul>
+            <p class="card__description">
+              Development of a 15-piece sliding puzzle using React with the goal
+              of learning more about array manipulations..
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="img\weather-app.PNG" class="card__image" alt="" />
+            <ul class="list__skills--card">
+              <li class="skills">#HTML</li>
+              <li class="skills">#CSS</li>
+              <li class="skills">#React</li>
+            </ul>
+            <p class="card__description">
+              A Weather App created with React and the Openweather API.
+            </p>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <!-- Footer -->
@@ -168,11 +170,6 @@
         <li class="social-list__item">
           <a class="social-list__link" href="mailto:kevin-hoelscher@posteo.de">
             <i class="fa-sharp fa-solid fa-envelope"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com/HolscherKevin">
-            <i class="fab fa-twitter"></i>
           </a>
         </li>
         <li class="social-list__item">
@@ -190,7 +187,5 @@
         </li>
       </ul>
     </footer>
-
-    <script src="js/index.js"></script>
   </body>
 </html>
