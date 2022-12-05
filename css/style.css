@@ -562,3 +562,10 @@ h3 {
   background-color: rgba(112, 104, 104, 0.411);
   border-radius: 0.25rem;
 }
+
+@media (max-width: 1400px) {
+  .cards {
+    width: 70vw;
+    margin: auto;
+  }
+}
