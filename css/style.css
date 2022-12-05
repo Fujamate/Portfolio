@@ -483,7 +483,7 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: 2rem;
   margin: 4rem 5vw;
   padding: 0;
@@ -566,16 +566,16 @@ h3 {
   overflow: hidden;
 }
 
-.second__card {
-  width: 90%;
-  margin: 2.5% 0 0 5%;
-  background-color: rgba(112, 104, 104, 0.411);
-  border-radius: 0.25rem;
+@media (max-width: 1200px) {
+  .cards {
+    width: 70vw;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1400px) {
   .cards {
-    width: 70vw;
+    width: 50vw;
     margin: auto;
   }
 }
