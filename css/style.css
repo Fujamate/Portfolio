@@ -84,6 +84,7 @@ strong {
   padding: 0.25rem 1rem;
   text-align: center;
   font-weight: var(--fs-h3);
+  white-space: nowrap;
 }
 
 .list__skills--card {
