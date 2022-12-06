@@ -321,7 +321,7 @@ h3 {
   justify-content: center;
 }
 
-.portfolio__img {
+.card__image {
   height: 300px;
   width: 300px;
 
@@ -336,14 +336,15 @@ h3 {
   }
 }
 
-.portfolio__item:focus {
+.card__image:focus {
   position: relative;
-  z-index: 2;
+  z-index: 12;
 }
 
 .card__image:hover,
 .card__image:focus .card__image {
-  opacity: 0.5;
+  transform: scale(1.05);
+  opacity: 0.6;
 }
 
 .portfolio-skills {
